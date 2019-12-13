@@ -28,7 +28,7 @@ Vector Vector::operator-() {
 }
 
 Vector Vector::operator-(Vector rhs) {
-    return {this->x_ - rhs.x_, this->y_ - rhs.y_};
+    return *this + -rhs;
 }
 
 int Vector::operator*(Vector rhs) {
